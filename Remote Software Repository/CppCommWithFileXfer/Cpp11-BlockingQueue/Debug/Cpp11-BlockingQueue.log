@@ -1,0 +1,5 @@
+﻿  Cpp11-BlockingQueue.cpp
+c:\users\prasa\source\repos\ood\project3\project3helpwpf\cppcommwithfilexfer\cpp11-blockingqueue\cpp11-blockingqueue.h(120): error C2146: syntax error: missing ';' before identifier 'T'
+  c:\users\prasa\source\repos\ood\project3\project3helpwpf\cppcommwithfilexfer\cpp11-blockingqueue\cpp11-blockingqueue.h(96): note: while compiling class template member function 'std::string BlockingQueue<std::string>::deQ(void)'
+  c:\users\prasa\source\repos\ood\project3\project3helpwpf\cppcommwithfilexfer\cpp11-blockingqueue\cpp11-blockingqueue.cpp(25): note: see reference to function template instantiation 'std::string BlockingQueue<std::string>::deQ(void)' being compiled
+  c:\users\prasa\source\repos\ood\project3\project3helpwpf\cppcommwithfilexfer\cpp11-blockingqueue\cpp11-blockingqueue.cpp(25): note: see reference to class template instantiation 'BlockingQueue<std::string>' being compiled

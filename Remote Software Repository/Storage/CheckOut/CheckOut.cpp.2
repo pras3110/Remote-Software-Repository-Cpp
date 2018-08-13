@@ -1,0 +1,41 @@
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+// CheckOut.cpp - Test Stub for CheckOut package                                    //
+// ver 1.0                                                                         //
+// Language:    C++, Visual Studio 2017                                            //
+// Prasanna Dodwad, CSE687 - Object Oriented Design, Spring 2018                   //
+////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+* Required Files :
+*-------------- -
+* Payload.h
+* FileSystem.h
+* FileSystem.cpp
+* FileMgr.h
+* FileMgr.cpp
+* CheckOut.h
+
+* Maintenance History :
+*--------------------
+* ver 1.0 : 3rd March 2018
+
+*/
+
+
+
+#include "CheckOut.h"
+#include "../NoSQLDB/PayLoad/PayLoad.h"
+
+using namespace NoSqlDb;
+#ifdef TEST_CHECKOUT
+
+int main() {
+
+	CheckOut<PayLoad>::sendFilestoClient("../LocalStorage/","Query.h.1","../root");
+	std::getchar();
+	return 0;
+}
+#endif // DEBUG

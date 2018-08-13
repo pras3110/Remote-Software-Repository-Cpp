@@ -1,0 +1,57 @@
+﻿<Window x:Class="Client.AddChildren"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="AddChildren" Height="550" Width="800" Closing="window_close">
+    
+    <!--
+    
+    
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+// AddChildren.xaml.cs -Demonstrates Add Children to a Checkin file to Repository Functionality        //
+// Author: Prasanna Dodwad, pdodwad@syr.edu                                                            //
+// Prasanna Dodwad, CSE687 - Object Oriented Design, Spring 2018                                       //
+// Environment: C# console                                                                             //             
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    
+    -->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label>Click the CheckBox to add childrens</Label>
+        <ListBox Width="700" Height="200" x:Name="Children_list" Grid.Row="1">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="LightBlue" Margin="0,1,0,1" BorderThickness="1" CornerRadius="0">
+                        <Grid Name="Gridpras">
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20" />
+                                <ColumnDefinition Width="300" />
+                                <ColumnDefinition Width="300"/>
+                            </Grid.ColumnDefinitions>
+                            <CheckBox IsChecked="{Binding Path=CheckBoxSelected}" IsEnabled="true" VerticalAlignment="Center"  Grid.Column="0"></CheckBox>
+                            <TextBox IsEnabled="False" Name="keys_name" VerticalAlignment="Center" Grid.Column="1" FontSize="16" Padding="4,0,4,0" Text="{Binding Path=Keys}"/>
+                            <TextBox Text="{Binding Path=Children_Value}" IsEnabled="False" Grid.Column="2" Padding="4,0,4,0" VerticalAlignment="Center"></TextBox>
+                            
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            
+
+
+        </ListBox>
+        <Button Margin="346,20,346,160" Click="add_child_click"  Width="100" Height="20" Grid.Row="2">Add child</Button>
+
+    </Grid>
+</Window>

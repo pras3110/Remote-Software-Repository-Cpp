@@ -1,0 +1,10 @@
+﻿  Test.cpp
+c:\users\prasa\source\repos\ood\project4\oodproject4\project2\coderepo\coderepo.h(127): error C2589: ':': illegal token on right side of '::'
+  c:\users\prasa\source\repos\ood\project4\oodproject4\project2\coderepo\coderepo.h(154): note: see reference to class template instantiation 'CodeRepo<T>' being compiled
+c:\users\prasa\source\repos\ood\project4\oodproject4\project2\coderepo\coderepo.h(127): error C2062: type 'unknown-type' unexpected
+c:\users\prasa\source\repos\ood\project4\oodproject4\project2\coderepo\coderepo.h(127): error C2238: unexpected token(s) preceding ';'
+c:\users\prasa\source\repos\ood\project4\oodproject4\project2\coderepo\coderepo.h(664): error C2039: 'localSendForRepo': is not a member of 'CodeRepo<T>'
+c:\users\prasa\source\repos\ood\project4\oodproject4\project2\coderepo\coderepo.h(664): error C2059: syntax error: '='
+c:\users\prasa\source\repos\ood\project4\oodproject4\project2\test\test.cpp(240): error C2653: 'FileSystem': is not a class or namespace name
+c:\users\prasa\source\repos\ood\project4\oodproject4\project2\test\test.cpp(245): error C2653: 'FileSystem': is not a class or namespace name
+c:\users\prasa\source\repos\ood\project4\oodproject4\project2\test\test.cpp(337): error C2653: 'FileSystem': is not a class or namespace name

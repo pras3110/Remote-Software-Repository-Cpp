@@ -1,0 +1,14 @@
+< ? xml version = "1.0" encoding = "utf-8" ? >
+
+  <dependency>
+    <row>
+      <key>
+        CheckIn::CheckIn.cpp.1
+      </key>
+      <vectorlist>
+        <vector>
+          FileSystem::FileMgr.h.1
+        </vector>
+      </vectorlist>
+    </row>
+  </dependency>
